@@ -1,0 +1,2 @@
+-- lib-noise-c: package manifest.
+{ modules: ["noise-c"] }
