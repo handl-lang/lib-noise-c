@@ -6,7 +6,7 @@
 --- simple value-noise implementation for the current phase, not full
 --- gradient Perlin/Simplex noise.
 
-from "../rand-c" import { seeded_int }
+from "../../lib-rand-c/src" import { seeded_int }
 
 do {
   HASH_MAX = 2147483646
