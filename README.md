@@ -1,8 +1,20 @@
 # lib-noise-c
 
-noise: C backend (perlin/simplex) — Handl stdlib port
+C backend for the `noise` ports (perlin/simplex).
 
-Part of the `handl-lang` org split (ADR-0128); moved from `kit-canonical/handl-packages/noise-c/`.
+## Layout
+
+```text
+src/index.hnl   the .hnl sources
+pkg.hnl         package manifest — modules, deps, description, license
+ci.sh           bupha entry → scripts/hnl-gate.sh
+```
+
+## Gate
+
+```bash
+HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
+```
 
 ## License
 
