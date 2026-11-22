@@ -1,2 +1,2 @@
 -- lib-noise-c: package manifest.
-{ modules: ["noise-c"], description: "C backend for the noise ports (perlin/simplex).", license: "MIT" }
+{ modules: ["noise-c"], deps: { "rand-c": "branch:main" }, description: "C backend for the noise ports (perlin/simplex).", license: "MIT" }
