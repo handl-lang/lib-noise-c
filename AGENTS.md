@@ -1,3 +1,30 @@
+# lib-noise-c
+
+C backend for the `noise` ports (perlin/simplex). Pure `.hnl`.
+
+## Layout
+
+| path | role |
+| --- | --- |
+| `src/index.hnl` | the backend implementation |
+| `pkg.hnl` | manifest — `modules: ["noise-c"]`, dep `rand-c` |
+| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+
+## Contract
+
+- Implements the `noise` contract (`lib-noise`) over the `rand-c`
+  entropy/randomness backend.
+
+## Verification
+
+```bash
+HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
+```
+
+## License
+
+MIT.
+
 <!-- myco:agent-awareness -->
 
 ## Agent awareness
