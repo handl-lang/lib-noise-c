@@ -8,7 +8,7 @@ C backend for the `noise` ports (perlin/simplex). Pure `.hnl`.
 | --- | --- |
 | `src/index.hnl` | the backend implementation |
 | `pkg.hnl` | manifest — `modules: ["noise-c"]`, dep `rand-c` |
-| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+| `scripts/hnl-gate.sh`, `workflows/gate.yaml` | the gate / bupha entry |
 
 ## Contract
 
